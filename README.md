@@ -43,32 +43,32 @@ DB: PostgreSQL
 
 > NOTE: **ALL** endpoints starts with `/api/v1`
 
-| URL             | METHOD | DESCRIPTION                   |
-| --------------- | ------ | ----------------------------- |
-| /users          | GET    | Retrieves all users           |
-| /users          | POST   | Create new user               |
-| /users/:userId  | GET    | Retrieves user of id 'userId' |
-| /users/:userId  | PUT    | Updates user of id 'userId'   |
-| /users/:userId/ | GET    | Retrieves user of id 'userId' |
+| URL    | METHOD | DESCRIPTION         |
+| ------ | ------ | ------------------- |
+| /users | GET    | Retrieves all users |
+| /users | POST   | Create new user     |
 
 > NOTE: **ALL** endpoints requires authenticated user
 
-| URL                                | METHOD | DESCRIPTION                 |
-| ---------------------------------- | ------ | --------------------------- |
-| /users/:userId/received            | GET    | Retrieves received messages |
-|                                    |        | by user of id 'userId'      |
-| /users/:userId/sent                | GET    | Retrieves sent messages by  |
-|                                    |        | user of id 'userId'         |
-| /users/:userId/messages            | GET    | Retrieves all messages by   |
-|                                    |        | user of id 'userId'         |
-| /users/:userId/messages            | POST   | Create new message of       |
-|                                    |        | user of id 'userId'         |
-| /users/:userId/messages/:messageId | GET    | Retrieves all messages of   |
-|                                    |        | id 'messageId' by user of   |
-|                                    |        | id 'userId'                 |
-| /users/:userId/messages/:messageId | PUT    | Updates message of id       |
-|                                    |        | 'messageId' by user of id   |
-|                                    |        | 'userId'                    |
-| /users/:userId/messages/:messageId | DELETE | Deletes message of id       |
-|                                    |        | 'messageId' by user of id   |
-|                                    |        | 'userId'                    |
+| URL                                | METHOD | DESCRIPTION                   |
+| ---------------------------------- | ------ | ----------------------------- |
+| /users/:userId                     | GET    | Retrieves user of id 'userId' |
+| /users/:userId                     | PUT    | Updates user of id 'userId'   |
+| /users/:userId/                    | GET    | Retrieves user of id 'userId' |
+| /users/:userId/received            | GET    | Retrieves received messages   |
+|                                    |        | by user of id 'userId'        |
+| /users/:userId/sent                | GET    | Retrieves sent messages by    |
+|                                    |        | user of id 'userId'           |
+| /users/:userId/messages            | GET    | Retrieves all messages by     |
+|                                    |        | user of id 'userId'           |
+| /users/:userId/messages            | POST   | Create new message of         |
+|                                    |        | user of id 'userId'           |
+| /users/:userId/messages/:messageId | GET    | Retrieves all messages of     |
+|                                    |        | id 'messageId' by user of     |
+|                                    |        | id 'userId'                   |
+| /users/:userId/messages/:messageId | PUT    | Updates message of id         |
+|                                    |        | 'messageId' by user of id     |
+|                                    |        | 'userId'                      |
+| /users/:userId/messages/:messageId | DELETE | Deletes message of id         |
+|                                    |        | 'messageId' by user of id     |
+|                                    |        | 'userId'                      |
