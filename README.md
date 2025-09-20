@@ -52,6 +52,7 @@ DB: PostgreSQL
 
 | URL                                | METHOD | DESCRIPTION                   |
 | ---------------------------------- | ------ | ----------------------------- |
+| /users/login                       | POST   | Authenticates user            |
 | /users/:userId                     | GET    | Retrieves user of id 'userId' |
 | /users/:userId                     | PUT    | Updates user of id 'userId'   |
 | /users/:userId/                    | GET    | Retrieves user of id 'userId' |
