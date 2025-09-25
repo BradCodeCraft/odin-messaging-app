@@ -11,7 +11,7 @@ Front End: ReactJS (from vite)
 Back End: ExpressJS
 
 - Libraries: `express express-validator express-session bcryptjs jsonwebtoken
-passport passport-local passport-jwt pg cors`
+passport passport-jwt cors`
 
 ORM: Prisma
 
