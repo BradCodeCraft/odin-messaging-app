@@ -62,9 +62,6 @@ DB: PostgreSQL
 | /users/:userId/conversations/ | GET    | Retrieves conversation of id  |
 | :conversationId               |        | 'conversationId' by user of   |
 |                               |        | id 'userId'                   |
-| /users/:userId/conversations/ | PUT    | Updates conversation of id    |
-| :conversationId               |        | 'conversationId' by user of   |
-|                               |        | id 'userId'                   |
 | /users/:userId/conversations/ | DELETE | Deletes conversation of id    |
 | :conversationId               |        | 'conversationId' by user of   |
 |                               |        | id 'userId'                   |
