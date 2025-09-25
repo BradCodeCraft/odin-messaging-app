@@ -2,6 +2,7 @@ const express = require("express");
 const passport = require("./src/configs/passport");
 const session = require("express-session");
 const usersRouter = require("./src/routers/usersRouter");
+const cors = require("cors");
 
 const app = express();
 
@@ -21,6 +22,7 @@ app.use(
   }),
 );
 app.use(passport.session());
+app.use(cors());
 
 /**
  * NOTE: Routes
