@@ -6,7 +6,7 @@ A web app that allows users to send messages to each other.
 
 Front End: ReactJS (from vite)
 
-- Libraries: `react-router-dom`
+- Libraries: `react-router-dom axios`
 
 Back End: ExpressJS
 
@@ -29,15 +29,17 @@ DB: PostgreSQL
 
 ### Pages
 
-| URL           | Description      |
-| ------------- | ---------------- |
-| /             | Welcome Page     |
-| /signup       | Sign Up Page     |
-| /login        | Log In Page      |
-| /home         | Home Page        |
-| /home/profile | Profile Page     |
-| /home/new     | New Message Page |
-| /home/edit    | New Message Page |
+| URL                            | Description                              |
+| ------------------------------ | ---------------------------------------- |
+| /                              | Welcome Page                             |
+| /signup                        | Sign Up Page                             |
+| /login                         | Log In Page                              |
+| /home                          | Home Page                                |
+| /home/profile                  | Profile Page                             |
+| /home/new                      | New Conversation Page                    |
+| /home/:conversationId          | Conversation of id 'conversationId' Page |
+| /home/:conversationId/messages | Messages in Conversation of id           |
+|                                | 'conversationId' Page                    |
 
 ### Endpoints
 
